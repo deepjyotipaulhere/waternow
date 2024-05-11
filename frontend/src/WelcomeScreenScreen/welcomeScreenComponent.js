@@ -14,7 +14,7 @@ function WelcomeScreenComponent() {
     <>
       <AppBar
         position="static"
-        style={{ backgroundColor: "black", height: "64px" }}
+        style={{ backgroundColor: "black", height: "70px" }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
@@ -62,8 +62,19 @@ function WelcomeScreenComponent() {
             ></Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <Button sx={{ my: 2, color: "white", display: "block" }}>
-                <h4>WaterNow</h4>
+                <h2>WaterNow</h2>
               </Button>
+            </Box>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: "block",
+                float: "right",
+              }}
+            >
+              <div class="button-container">
+                <Button variant="contained">Contained</Button>{" "}
+              </div>
             </Box>
           </Toolbar>
         </Container>
