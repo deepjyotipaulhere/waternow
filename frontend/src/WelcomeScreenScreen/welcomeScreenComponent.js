@@ -13,7 +13,10 @@ import {
 function WelcomeScreenComponent() {
 	return (
 		<>
-			<AppBar position="static" style={{ backgroundColor: "black" }}>
+			<AppBar
+				position="static"
+				style={{ backgroundColor: "black", height: "70px" }}
+			>
 				<Container maxWidth="xl">
 					<Toolbar disableGutters>
 						<Typography
@@ -31,22 +34,24 @@ function WelcomeScreenComponent() {
 								textDecoration: "none",
 							}}
 						>
-							<img src={logo2} width="50" height="50" alt="Italian Trulli"></img>
+							<img
+								src={logo2}
+								width="75"
+								height="75"
+								alt="Italian Trulli"
+							></img>
 						</Typography>
 
 						<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-
+							<Button sx={{ my: 2, color: "white", display: "block" }}>
+								<h2>WaterNow</h2>
+							</Button>
 						</Box>
-						<Box sx={{ display: { xs: "none", md: "flex" } }}>
-							<Link to='/login'>
-								<Button type="button" color="primary" sx={{ my: 2, color: "white", display: "block" }}>
-									Login
-								</Button>
-							</Link>
-						</Box>
+						<Button variant="contained">Contained</Button>{" "}
 					</Toolbar>
 				</Container>
 			</AppBar>
+
 
 			<div className="WelcomeScreen">
 				<div className="content">
