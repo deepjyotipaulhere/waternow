@@ -24,6 +24,15 @@
   color: white;
 }
 
+.WelcomeScreen img {
+  max-width: 100%;
+  /* Ensures the image never exceeds the container's width */
+  height: auto;
+  /* Maintains the aspect ratio of the image */
+  display: block;
+  /* Prevents extra space below the image in some browsers */
+}
+
 .App-link {
   color: #61dafb;
 }

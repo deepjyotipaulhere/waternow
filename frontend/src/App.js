@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import WelcomeScreenComponent from './WelcomeScreenScreen/welcomeScreenComponent';
+import logo from "./logo.svg";
+import "./App.css";
+import WelcomeScreenComponent from "./WelcomeScreenScreen/WelcomeScreenComponent";
+
 function App() {
   return (
     <div className="App">
@@ -18,8 +19,8 @@ function App() {
           Learn React
         </a>
       </header> */}
-		  
-		  <WelcomeScreenComponent/>
+
+      <WelcomeScreenComponent />
     </div>
   );
 }
