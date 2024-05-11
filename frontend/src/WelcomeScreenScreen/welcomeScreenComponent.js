@@ -1,5 +1,5 @@
 import img from "../images/futureImage.jpg";
-import logo from "../images/logo.jpg";
+import logo2 from "../images/logo2.jpg";
 import {
   AppBar,
   Container,
@@ -12,7 +12,10 @@ import {
 function WelcomeScreenComponent() {
   return (
     <>
-      <AppBar position="static" style={{ backgroundColor: "black" }}>
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "black", height: "64px" }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -30,7 +33,12 @@ function WelcomeScreenComponent() {
                 textDecoration: "none",
               }}
             >
-              <img src={logo} width="50" height="50" alt="Italian Trulli"></img>
+              <img
+                src={logo2}
+                width="75"
+                height="75"
+                alt="Italian Trulli"
+              ></img>
             </Typography>
 
             <Box
