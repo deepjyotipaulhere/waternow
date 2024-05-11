@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import img from "../images/futureImage.jpg";
-import logo from "../images/logo.jpg";
+import logo2 from "../images/logo2.jpg";
 import {
 	AppBar,
 	Container,
@@ -31,7 +31,7 @@ function WelcomeScreenComponent() {
 								textDecoration: "none",
 							}}
 						>
-							<img src={logo} width="50" height="50" alt="Italian Trulli"></img>
+							<img src={logo2} width="50" height="50" alt="Italian Trulli"></img>
 						</Typography>
 
 						<Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -39,7 +39,7 @@ function WelcomeScreenComponent() {
 						</Box>
 						<Box sx={{ display: { xs: "none", md: "flex" } }}>
 							<Link to='/login'>
-								<Button sx={{ my: 2, color: "white", display: "block" }}>
+								<Button type="button" color="primary" sx={{ my: 2, color: "white", display: "block" }}>
 									Login
 								</Button>
 							</Link>
