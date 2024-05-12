@@ -11,6 +11,8 @@ import { ThemeProvider, createTheme } from "@mui/material";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
+import MyTanks from "./home/MyTanks";
+import Dashboard from "./home/Dashboard";
 
 const theme = createTheme({
   palette: { primary: { main: "#213c73" } },
@@ -24,6 +26,8 @@ root.render(
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<App />} />
+            <Route path="/home/mytanks" element={<MyTanks />} />
+            <Route path="/home/dashboard" element={<Dashboard />} />
             {/* <App /> */}
           </Routes>
         </BrowserRouter>

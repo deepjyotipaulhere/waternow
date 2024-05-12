@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import WelcomeScreenComponent from "./WelcomeScreenScreen/WelcomeScreenComponent";
+import WelcomeScreenComponent from "./WelcomeScreenComponent";
 
 function App() {
   return (

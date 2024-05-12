@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/2a246a3b-5e73-45f6-8f45-3f14eb598a45/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/waternow",
+    "appService.deploySubpath": "frontend"
+}
