@@ -79,12 +79,16 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "ENGINE": "mssql",
         "NAME": "waternow",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "HOST": "waternow2.database.windows.net",
+        "PORT": "1433",
         "USER": "postgres",
-        "PASSWORD": "1234",
+        "PASSWORD": "Admin@123",
+        "OPTIONS": {
+            "driver": "ODBC Driver 17 for SQL Server",
+            'extra_params': "Encrypt=no;TrustServerCertificate=yes" 
+        },
     }
 }
 
@@ -130,3 +134,4 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ALLOW_ALL_ORIGINS = True
+FORCE_SCRIPT_NAME="/waternowapi"
