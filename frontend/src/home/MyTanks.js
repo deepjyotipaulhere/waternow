@@ -108,7 +108,7 @@ export default function MyTanks() {
                 variant="filled"
                 sx={{ width: '100%' }}
             >
-                Donation Successfull!
+                Donation requested!
             </Alert>
         </Snackbar>
     </Master>
