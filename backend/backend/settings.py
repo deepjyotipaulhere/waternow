@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-jnydv4id(aq68hja3u&g(vjjg$@tlc6-awni7=i&c6*v3(3yc^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,16 +79,12 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "mssql",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "waternow",
-        "HOST": "waternow2.database.windows.net",
-        "PORT": "1433",
+        "HOST": "localhost",
+        "PORT": "5432",
         "USER": "postgres",
-        "PASSWORD": "Admin@123",
-        "OPTIONS": {
-            "driver": "ODBC Driver 17 for SQL Server",
-            'extra_params': "Encrypt=no;TrustServerCertificate=yes" 
-        },
+        "PASSWORD": "1234",
     }
 }
 
@@ -134,4 +130,3 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ALLOW_ALL_ORIGINS = True
-FORCE_SCRIPT_NAME="/waternowapi"
