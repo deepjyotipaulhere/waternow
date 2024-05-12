@@ -1,6 +1,7 @@
 import { Link, useNavigate, useNavigation } from "react-router-dom";
-import img from "../images/futureImage.jpg";
-import logo2 from "../images/logo2.jpg";
+import img from "./images/futureImage.jpg";
+import logo2 from "./images/logo2.jpg";
+import { BarChart } from '@mui/x-charts/BarChart';
 import {
 	AppBar,
 	Container,
@@ -93,6 +94,29 @@ function WelcomeScreenComponent() {
 					<Typography variant="h1" pt={15} bgcolor={theme.palette.primary.main} fontWeight={900}><span style={{ color: 'deepskyblue' }}>Water</span><span style={{ backgroundColor: theme.palette.primary.main, color: 'white', }}>Now</span></Typography>
 					<Typography variant="h6" bgcolor='lightskyblue' py={1}>Solving Bangalore's Water Crisis...responsibly</Typography>
 				</div>
+			</div>
+
+			<div style={{ marginTop: '75vh', marginBottom: '10vh' }}>
+				<Typography variant="h3" component='h3' textAlign='center'>Dashboard for Investors</Typography>
+				<center>
+				<Typography variant="body1" textAlign='center' component='h6' width={500}>These housing societies are facing water shortages, but some are having excess water storage. Investors can approach the societies for investing in their infrastructure, logistics and pipeline maintenance.</Typography>
+					<BarChart colors={[theme.palette.primary.main]}
+						xAxis={[
+							{
+								id: 'barCategories',
+								data: ['Galaxy Housing Society', 'Royal Supreme Housing Society'],
+								scaleType: 'band',
+							},
+						]}
+						series={[
+							{
+								data: [9, 2],
+							},
+						]}
+						width={500}
+						height={300}
+					/>
+				</center>
 			</div>
 			<Dialog
 				open={open}
